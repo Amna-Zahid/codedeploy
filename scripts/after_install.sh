@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mkdir /home/ubuntu/codedeploy
-cd /home/ubuntu/codedeploy
+
+cd /var/www/codedeploy
 
 sudo npm install
