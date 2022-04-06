@@ -17,4 +17,6 @@ hooks:
       runas: root
 # During the ApplicationInstall deployment lifecycle event, run the commands 
 #   in the script specified in "location".
-  
+  ApplicationStart:
+    - location: scripts/run_app.sh
+      runas: root
