@@ -1,20 +1,20 @@
 version: 0.0
-os: ubuntu
+os: linux
 files:
-  - source: /
+  - source: ./
     destination: /home/ubuntu/codedeploy
 
 hooks:
   BeforeInstall:
     - location: scripts/before_install.sh
-      timeout: 300
-      runas: ubuntu
+      timout: 300
+      runas: root
 # During the AfterInstall deployment lifecycle event, run the commands 
 #   in the script specified in "location".
   AfterInstall:
     - location: scripts/after_install.sh
       timeout: 300
-      runas: ubuntu
+      runas: root
 # During the ApplicationInstall deployment lifecycle event, run the commands 
 #   in the script specified in "location".
   
