@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Install node.js
+cd /var/www/
 sudo apt-get update
 curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
 sudo apt-get install nodejs -y
