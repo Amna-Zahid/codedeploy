@@ -19,4 +19,5 @@ hooks:
 #   in the script specified in "location".
   ApplicationStart:
     - location: scripts/run_app.sh
+      timeout: 900
       runas: root
