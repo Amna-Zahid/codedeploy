@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: ./
-    destination: /home/ubuntu/codedeploy
+  - source: /
+    destination: /var/www/
 
 hooks:
   BeforeInstall:
